@@ -1,0 +1,38 @@
+#root {
+    .header {
+        text-align: center;
+        font-size: 22px;
+        padding: 10px;
+    }
+    .content {
+        width: 60%;
+        margin: auto;
+        .support {
+            &.show {
+                .support-content {
+                    display: block;
+                }
+            }
+            .support-header {
+                color: #fff;
+                background-color: #14af83;
+                padding: 10px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #15b89a;
+                }
+            }
+            .support-content {
+                background-color: #fff;
+                display: none;
+                .support-item {
+                    color: #0F9932;
+                    &.not-support {
+                        color: red;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
